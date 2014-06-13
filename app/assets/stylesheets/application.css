@@ -1,0 +1,249 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+
+h4{
+  text-align:left;
+}
+ul{
+  padding:0;
+  list-style:none;
+}
+ul li{
+  float:left;
+  width:102px;
+  text-align: center;
+  line-height:65px;
+}
+ul li a{
+  display: block;
+  color: #fff;
+  background: #10255e;
+  text-decoration:none;
+  text-align:center;
+}
+ul li a:hover{
+  color:#10255e;
+  background:#fff;
+}
+ul li ul{
+  display: none;
+}
+ul li:hover ul{
+  display:block; /* display the dropdown */
+}
+ul li ul li{
+  line-height:32px;
+}
+
+li.updated{
+  list-style-type:square;
+  font-size:12px;
+  text-align:left;
+}
+ul.updated{
+  list-style-type:square;
+  font-size:12px;
+  text-align:left;
+}
+a,p{
+  font-size:12px;
+  text-align:left;
+}
+
+
+
+*{
+  margin:0;
+  padding:0;
+}
+div.wrap{
+  position:absolute;
+  margin:0;
+  padding:0;
+  top:0;
+  left:0;
+  width:100%;
+
+}
+
+div.container{
+  position:relative;
+  text-align:center;
+}
+
+div.top{
+  position:relative;
+  height:65px;
+  background:#10255e;
+  text-align:center;
+}
+div.top-center{
+  position:relative;
+  margin:0 auto;
+  width:940px;
+  height:100%;
+}
+div.top-center-logo{
+  position:absolute;
+  top:23.71px;
+  left:16px;
+  height:15.5px;
+  width:102px;
+  background-image:url('/img/logo_txt_ic.png');
+  background-repeat:no-repeat;
+  background-size:101%;
+  background-position:center;
+}
+div.menubox{
+  position:relative;
+  text-align:center;
+}
+div.menubox-ct-menubox{
+  position:absolute;
+  left:389px;
+  height:auto;
+  width:408px;
+  z-index:1;
+}
+div.menubox-ct{
+  position:relative;
+  margin:0 auto;
+  width:940px;
+  height:auto;
+  z-index:1;
+}
+div.top-center-menubox div div {
+  display:none;
+}
+div.top-center-menubox div:hover div {
+  display:block;
+}
+
+div.top-center-menubox-menu{
+  position:relative;
+  height:100%;
+  width:102px;
+  float:left;
+  color:#fff;
+}
+div.top-center-menubox-menu:hover{
+  position:relative;
+  height:100%;
+  width:102px;
+  float:left;
+  background:#fff;
+  color:#10255e;
+}
+div.top-center-menubox-menu-downbox{
+  position:absolute;
+  height:auto;
+  top:65px;
+  width:102px;
+  background:#10255e;
+  color:#fff;
+}
+div.top-center-menubox-menu-downbox-menu{
+  position:relative;
+  height:55px;;
+  width:102px;
+  float:left;
+  background:#10255e;
+  color:#fff;
+}
+
+div.middle{
+  position:relative;
+  margin:0 auto;
+  width:940px;
+  height:1000px;
+}
+
+div.middle-lt{
+  position:relative;
+  width:220px;
+  height:1000px;
+  float:left;
+}
+
+div.middle-rt{
+  position:relative;
+  width:695px;
+  height:auto;
+  float:right;
+  margin-top:25px;
+  text-align:initial;
+}
+
+div.block25{
+  position:relative;
+  height:25px;
+}
+
+div.block20{
+  position:relative;
+  height:20px;
+}
+div.block50{
+  position:relative;
+  height:50px;
+}
+div.block70{
+  position:relative;
+  height:70px;
+}
+div.block{
+  position:relative;
+  height:auto;
+}
+
+div.account_ic{
+  position:relative;
+  float:left;
+  background-image:url('/img/account_ic.png');
+  background-repeat:no-repeat;
+  background-size:105%;
+  background-position: -5px 0 0 0;
+  width: 96px;
+  height:100%;
+}
+div.account_txt{
+  position:relative;
+  float:left;
+  padding: 10px 15px;
+  width:93px;
+  height:50px;
+  text-align:left;
+}
+
+
+div.major_info-lt{
+  position:relative;
+  float:left;
+  width:36px;
+  height:36px;
+  background-image:url('/img/major_info_ic.png');
+  background-repeat:no-repeat;
+  background-size:105%;
+  background-position: center -2px;
+}
+
+div.major_info-rt{
+  position:relative;
+  float:left;
+  width:169px;
+  padding-left:15px;
+  height:100%;
+  text-align:left;
+}

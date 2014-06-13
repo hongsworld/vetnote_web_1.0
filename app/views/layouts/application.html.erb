@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>VetnoteWeb</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<script>
+  <% if !flash[:notice].nil? %>
+    alert(<%=flash[:notice]%>)
+  <% end %>
+</script>
+<body>
+
+  <div class = "wrap">
+    <div class = "container">
+      <div class = "menubox">
+        <div class = "menubox-ct">
+          <div class = "menubox-ct-menubox">
+            <ul>
+              <li>
+                <a href="#">평가하기</a>
+                <ul>
+                  <li><a href="#">로그북 확인</a></li>
+                  <li><a href="#">학생 코멘트</a></li>
+                  <li><a href="#">보고서 코멘트</a></li>
+                  <li><a href="#">학생 평가</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">커리큘럼</a>
+                <ul>
+                  <li><a href="#">로그북 목록</a></li>
+                  <li><a href="#">실습지침</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">질의응답</a>
+              </li>
+              <li>
+                <a href="#">공지사항</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class = "top">
+        <div class = "top-center">
+          <div class = "top-center-logo">
+          </div>
+        </div>
+      </div>
+      <div class = "middle">
+        <div class = "middle-lt">
+          <div class = "block25">
+          </div>
+          <div class = "block70">
+            <div class ="account_ic">
+            </div>
+            <div class = "account_txt">
+              <p>홍길동 교수님</p>
+              <br>
+              <a href="#">마이페이지</a>
+            </div>
+          </div>
+          <div class = "block20">
+          </div>
+          <div class = "block20">
+          </div>
+          <div class = "block50">
+              <li class = "updated"> jang2poom@naver.com</li>
+              <li class = "updated"> Last Logged On Apr 10,2014</li>
+          </div>
+          <div class = "block20">
+          </div>
+          <div class = "block20">
+          </div>
+          <div class = "block70">
+            <div class = "major_info-lt">
+
+            </div>
+            <div class = "major_info-rt">
+              <p> May 25~ Jun 10, 2014</p>
+              <p> 내과</p>
+              <a href="#"> 수강중인 학생 목록</a>
+            </div>
+          </div>
+          <div class = "block20">
+          </div>
+          <div class = "block20">
+          </div>
+          <div class = "block">
+            <h4> Updated </h4>
+            <li class ="updated">
+              <ul class = "updated"> 20minute ago
+              </ul>
+              <ul class = "updated"> 새로운 로그북 10개가 등록되었습니다.
+              </ul>
+            </li>
+            <li class = "updated">
+              <ul class = "updated"> 20minute ago
+              </ul>
+              <ul class = "updated"> 새로운 로그북 10개가 등록되었습니다.
+              </ul>
+            </li>
+            <li class = "updated">
+              <ul class = "updated"> 20minute ago
+              </ul>
+              <ul class = "updated"> 새로운 로그북 10개가 등록되었습니다.
+              </ul>
+            </li>
+          </div>
+        </div>
+        <div class = "middle-rt">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
